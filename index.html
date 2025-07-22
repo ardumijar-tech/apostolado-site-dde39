@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Apostolado Azul</title>
+  <style>
+    :root{--primary:#004d99;--bg:#f0f4f8}
+    body{font-family:Roboto;margin:0;color:#333}
+    header{background:var(--primary);color:#fff;padding:15px 30px;font-size:1.2rem}
+    .hero{background:url('https://picsum.photos/1200/600?blue') center/cover;min-height:60vh;display:flex;align-items:center;justify-content:center;color:#fff;text-align:center}
+    .hero h1{font-size:3rem;margin:.5rem}
+    .btn{background:var(--primary);color:#fff;padding:12px 24px;border:none;border-radius:4px;text-decoration:none;margin-top:1rem;display:inline-block}
+    section{padding:40px 20px;max-width:800px;margin:auto}
+    form input,form textarea{width:100%;padding:10px;margin:.5rem 0;border:1px solid #ccc;border-radius:4px}
+    footer{background:var(--primary);color:#fff;text-align:center;padding:20px}
+  </style>
 </head>
 <body>
-  <h1>Bienvenidos al Apostolado</h1>
-  <p>Sitio en construcción con GitHub Pages.</p>
+<header>Apostolado Azul</header>
+
+<section class="hero">
+  <div>
+    <h1>Bienvenidos al Apostolado Mariano</h1>
+    <p>“Id por todo el mundo y predicad el Evangelio” (Mc 16,15)</p>
+    <a class="btn" href="#contacto">Contáctanos</a>
+  </div>
+</section>
+
+<section>
+  <h2>Contacto</h2>
+  <form name="contacto" netlify>
+    <input type="text" name="nombre" placeholder="Tu nombre" required>
+    <input type="email" name="email" placeholder="Tu correo" required>
+    <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+    <button class="btn" type="submit">Enviar</button>
+  </form>
+</section>
+
+<section>
+  <h2>Donaciones</h2>
+  <a class="btn" href="https://paypal.me/TU_USUARIO" target="_blank">Donar con PayPal</a>
+</section>
+
+<footer>© 2025 Apostolado Azul</footer>
 </body>
 </html>
